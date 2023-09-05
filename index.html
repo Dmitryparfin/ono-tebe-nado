@@ -10,23 +10,43 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
-    <header class="header "></header>
-      <div>
-        <nav class="header__menu">
-          <a href="#cover" class="header__links-list-item">главная</a>
-          <a href="#lots" class="header__links-list-item">посмотреть лоты</a>
-          <a href="#about" class="header__links-list-item">об аукционе</a>
-        </nav>
-        <img class="header__logo" src="./images/logo-white.svg" alt="Логотип аукциона">
+    <header class="header">
+      <nav class="header__menu">
+        <a class="header__links-list-item header__link_active" href="#cover">главная</a>
+        <a class="header__link" href="#lots">посмотреть лоты</a>
+        <a class="header__link" href="#about">об аукционе</a>
+      </nav>
+      <a class="header header__logo">
+        <img 
+          class="header__logo-image"
+          src="./images/logo-black.svg"
+          alt="Логотип аукциона"
+        />
+      </a>
+      <div class="header__address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="info@sobaka.ge">info@sobaka.ge</a>
-        <address>наб. Принсенграхт 263-265,
-          <br> Амстердам
+        <address class="header__address">наб. Принсенграхт 263-265,
+        <br> Амстердам
         </address>
       </div>
+    </header>
     <main>
-      <section class="cover" id="cover"></section>
-      <section class="lots" id="lots"></section>
+      <section class="cover" id="cover">
+        <!--<div class="overlay"></div>--> 
+        <h1 class="cover__title">
+          <span class="aligned-text letter-spacing-extended no-letter-spacing">оно</span>
+          <span class="aligned-text_center letter-spacing-extended no-letter-spacing">тебе</span>
+          <span class="aligned-text_right letter-spacing-extended">надо</span>
+        </h1>
+        <div class="cover__description">
+          <p class="cover__description-text">Аукцион    вещей,    в    которые    никто    не     верил</p>
+          <button class="bet-button">Сделать ставку</button>
+        </div>
+      </section>
+      <section class="lots" id="lots">
+
+      </section>
       <section class="about" id="about"></section>
     </main>
     <footer class="footer"></footer>
