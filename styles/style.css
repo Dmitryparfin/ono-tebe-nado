@@ -295,7 +295,7 @@
     padding: 100px 0;
 }
 
-.about__text{
+.about__text {
     color: #000;
     font-family: Raleway;
     font-size: 20px;
@@ -304,16 +304,7 @@
     line-height: normal;
 }
 
-.about__text{
-    color: #000;
-    font-family: Raleway;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.about__text:last-child{
+.about__text:last-child {
     color: #000;
     font-family: Raleway;
     font-size: 20px;
@@ -352,7 +343,7 @@
     display: flex;
 }
 
-.footer__social-list-item{
+.footer__social-list-item {
     display: flex;
     list-style-type: none;
     gap: 48px;
