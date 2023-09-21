@@ -77,7 +77,6 @@
     height: 100%;
     background: #000;
     opacity: 0.6;
-    z-index: 0;
 }
 
 .cover__title {
@@ -150,12 +149,24 @@
     color: #FFF;
     padding: 12px 32px;
     text-align: center;
-    font-family: 'Raleway', 'Arial', 'Helvetica', sans-serif;
+    font-family: Raleway;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    transition: background-color 0.4s linear;
+}
+
+.bet-button:hover {
+    background-color: #fff;
+    transition: background-color 0.2s;
+    color: #000;
+}
+
+.bet-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #c0c0c0;
 }
 
 .lots {
@@ -263,8 +274,9 @@
     font-weight: 400;
     line-height: 120%; /* 24px */
     text-decoration: underline;
-    padding-top: 32px;
-    padding-left: 40px;
+    margin-top: 32px;
+    margin-left: 40px;
+    margin-right: 1108px;
     text-underline-position: under;
     background-color: transparent;
     text-decoration-thickness: 1px;
